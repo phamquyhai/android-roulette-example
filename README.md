@@ -2,6 +2,8 @@
 
 This simple project using ObjectAnimator for roulette animation
 
+![Demo](http://i.giphy.com/sXuAGsElyXcK4.gif)
+
 #### Download
 
 Source Code: [Dowload](https://github.com/KaKaVip/android-roulette-example/archive/1.0.zip) `.zip`
