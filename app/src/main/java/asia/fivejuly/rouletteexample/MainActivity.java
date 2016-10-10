@@ -29,17 +29,17 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void actionRoulette(View view) {
-        int corner = 360/38;
-        int randPosition = corner * new Random().nextInt(38);
-        int MIN = 5;
-        int MAX = 9;
-        long TIME_IN_WHEEL = 1000;
-        int randWheel = MIN + new Random().nextInt(MAX-MIN);
-        int truePosition =  randWheel * 360 + randPosition;
-        long totalTime = TIME_IN_WHEEL * randWheel + (TIME_IN_WHEEL/360) * randPosition;
+        int corner = 360/38; // corner for point
+        int randPosition = corner * new Random().nextInt(38); // random point
+        int MIN = 5; // min rotation
+        int MAX = 9; // max rotation
+        long TIME_IN_WHEEL = 1000;  // time in one rotation
+        int randRotation = MIN + new Random().nextInt(MAX-MIN); // random rotation
+        int truePosition =  randRotation * 360 + randPosition;
+        long totalTime = TIME_IN_WHEEL * randRotation + (TIME_IN_WHEEL/360) * randPosition;
 
         Log.d("ROULETTE_ACTION","randPosition : " + randPosition
-                + " randWheel : " + randWheel
+                + " randRotation : " + randRotation
                 + " totalTime : " + totalTime
                 + " truePosition : " + truePosition);
 
